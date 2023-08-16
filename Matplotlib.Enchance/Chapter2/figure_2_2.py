@@ -26,7 +26,7 @@ ellipse = [Ellipse(xy=np.random.rand(2)*10,
 
 for elle in ellipse:
     ax[1].add_patch(elle)
-    elle.set_alpha(np.random.rand(1))
+    elle.set_alpha(np.random.rand())
     elle.set_color(np.random.rand(3))
 
 ax[1].axis([-1,11,-1,11])
