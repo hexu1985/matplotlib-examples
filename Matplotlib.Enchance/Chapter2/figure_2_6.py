@@ -16,7 +16,7 @@ polygon = ellipse
 
 for pln in polygon:
     ax.add_patch(pln)
-    pln.set_alpha(np.random.rand(1))
+    pln.set_alpha(np.random.rand())
     pln.set_color(np.random.rand(3))
 
 ax.axis([0,4,0,4])
