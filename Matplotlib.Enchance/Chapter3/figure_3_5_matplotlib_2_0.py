@@ -29,7 +29,8 @@ plt.yticks([])
 
 # this is another inset axes over the main axes
 plt.axes([0.65,0.6,0.2,0.2],facecolor="k")
-count,bins,patches = plt.hist(y,bins,color="cornflowerblue",normed=True,cumulative=True,histtype="step")
+#count,bins,patches = plt.hist(y,bins,color="cornflowerblue",normed=True,cumulative=True,histtype="step")
+count,bins,patches = plt.hist(y,bins,color="cornflowerblue",density=True,cumulative=True,histtype="step")
 plt.ylim(0,1.0)
 plt.xticks([])
 plt.yticks([])
