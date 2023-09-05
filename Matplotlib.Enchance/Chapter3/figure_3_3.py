@@ -4,8 +4,8 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
 
-mpl.rcParams["font.sans-serif"]=["FangSong"]
-mpl.rcParams["axes.unicode_minus"]=False
+#mpl.rcParams["font.sans-serif"]=["FangSong"]
+#mpl.rcParams["axes.unicode_minus"]=False
 
 mu = 60.0
 sigma = 2.0
@@ -17,7 +17,8 @@ fig,ax = plt.subplots(1,1)
 
 n,bins,patches = ax.hist(x,
                          bins,
-                         normed=True,
+#                        normed=True,
+                         density=True,
                          histtype="bar",
                          facecolor="cornflowerblue",
                          edgecolor="white",
@@ -34,8 +35,11 @@ ax.text(54,0.2,
         r"$y=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}$",
         {"color": "r", "fontsize": 20})
 
-ax.set_xlabel("体重")
-ax.set_ylabel("概率密度")
-ax.set_title(r"体重的直方图: $\mu=60.0$, $\sigma=2.0$",fontsize=16)
+#ax.set_xlabel("体重")
+#ax.set_ylabel("概率密度")
+#ax.set_title(r"体重的直方图: $\mu=60.0$, $\sigma=2.0$",fontsize=16)
+ax.set_xlabel("weight")
+ax.set_ylabel("probability density")
+ax.set_title(r"histogram of weight: $\mu=60.0$, $\sigma=2.0$",fontsize=16)
 
 plt.show()
