@@ -9,11 +9,11 @@ import six
 import math
 
 import numpy as np
+from numpy import iterable
 
 import matplotlib.units as units
 import matplotlib.ticker as ticker
 from matplotlib.axes import Axes
-from matplotlib.cbook import iterable
 
 
 class ProxyDelegate(object):
