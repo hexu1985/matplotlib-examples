@@ -14,8 +14,7 @@ ax.plot(x,y,ls="-",lw=2,color="steelblue")
 ax.set_ylim(10,170)
 
 # this is an inset axes over the main axes
-#plt.axes([0.2,0.6,0.2,0.2],axisbg="k")
-plt.axes([0.2,0.6,0.2,0.2],fc="k")
+plt.axes([0.2,0.6,0.2,0.2],facecolor="k")
 count,bins,patches = plt.hist(y,bins,color="cornflowerblue")
 plt.ylim(0,28)
 plt.xticks([])
@@ -29,8 +28,7 @@ plt.xticks([])
 plt.yticks([])
 
 # this is another inset axes over the main axes
-#plt.axes([0.65,0.6,0.2,0.2],axisbg="k")
-plt.axes([0.65,0.6,0.2,0.2],fc="k")
+plt.axes([0.65,0.6,0.2,0.2],facecolor="k")
 #count,bins,patches = plt.hist(y,bins,color="cornflowerblue",normed=True,cumulative=True,histtype="step")
 count,bins,patches = plt.hist(y,bins,color="cornflowerblue",density=True,cumulative=True,histtype="step")
 plt.ylim(0,1.0)

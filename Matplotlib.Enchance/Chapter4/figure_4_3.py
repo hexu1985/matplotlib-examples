@@ -6,7 +6,7 @@ fontsize = 0.3*fig.dpi
 font_style = {"family":"sans-serif","fontsize":fontsize,"weight":"black"}
 
 # add axes in axis coords
-ax = fig.add_axes([0.0,0.0,1.0,1.0],fc="gold")
+ax = fig.add_axes([0.0,0.0,1.0,1.0],facecolor="gold")
 
 left = 0.2
 bottom = 0.2

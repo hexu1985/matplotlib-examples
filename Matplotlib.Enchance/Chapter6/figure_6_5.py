@@ -21,7 +21,7 @@ ax[0,0].xaxis.set_ticks_position("bottom")
 ax[0,0].yaxis.set_ticks_position("left")
 
 ax[0,0].set_ylim(-1,1)
-ax[0,0].set_axis_bgcolor("lemonchiffon")
+ax[0,0].set_facecolor("lemonchiffon")
 
 # subplot(2,3,4)
 ax[1,0].plot(x,y,lw=3,color="steelblue")
@@ -38,7 +38,7 @@ ax[1,0].xaxis.tick_bottom()
 ax[1,0].yaxis.tick_left()
 
 ax[1,0].set_ylim(-1,1)
-ax[1,0].set_axis_bgcolor("lemonchiffon")
+ax[1,0].set_facecolor("lemonchiffon")
 
 # subplot(2,3,2)
 ax[0,1].plot(x,y,lw=3,color="steelblue")
@@ -55,7 +55,7 @@ ax[0,1].xaxis.set_ticks_position("bottom")
 ax[0,1].yaxis.set_ticks_position("left")
 
 ax[0,1].set_ylim(-1,1)
-ax[0,1].set_axis_bgcolor("lemonchiffon")
+ax[0,1].set_facecolor("lemonchiffon")
 
 # subplot(2,3,5)
 ax[1,1].plot(x,y,lw=3,color="steelblue")
@@ -72,7 +72,7 @@ ax[1,1].xaxis.tick_bottom()
 ax[1,1].yaxis.tick_left()
 
 ax[1,1].set_ylim(-1,1)
-ax[1,1].set_axis_bgcolor("lemonchiffon")
+ax[1,1].set_facecolor("lemonchiffon")
 
 # subplot(2,3,3)
 ax[0,2].plot(x,y,lw=3,color="steelblue")
@@ -89,7 +89,7 @@ ax[0,2].xaxis.set_ticks_position("bottom")
 ax[0,2].yaxis.set_ticks_position("left")
 
 ax[0,2].set_ylim(-1,1)
-ax[0,2].set_axis_bgcolor("lemonchiffon")
+ax[0,2].set_facecolor("lemonchiffon")
 
 # subplot(2,3,6)
 ax[1,2].plot(x,y,lw=3,color="steelblue")
@@ -106,7 +106,7 @@ ax[1,2].xaxis.tick_bottom()
 ax[1,2].yaxis.tick_left()
 
 ax[1,2].set_ylim(-1,1)
-ax[1,2].set_axis_bgcolor("lemonchiffon")
+ax[1,2].set_facecolor("lemonchiffon")
 
 fig.subplots_adjust(wspace=0.35,hspace=0.2)
 

@@ -4,7 +4,7 @@ from matplotlib.patches import Rectangle
 fig = plt.figure(1,figsize=(8,8),dpi=80,facecolor="w")
 
 # add axes in axis coords
-ax = fig.add_axes([0.0,0.0,1.0,1.0],fc="gold")
+ax = fig.add_axes([0.0,0.0,1.0,1.0],facecolor="gold")
 
 left = 0.2
 bottom = 0.2
