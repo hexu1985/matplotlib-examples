@@ -5,12 +5,12 @@ fig = plt.figure()
 
 # figure picture
 # use "r" to avoid escape sequence \f 
-imageData1 = plt.imread(r"D:\figure_image\captain-bird.png")
+imageData1 = plt.imread(r"./captain-bird.png")
 # add an image to the figure
 fig.figimage(imageData1,200,100,origin="upper",alpha=0.05,resize=True,zorder=1)
 
 # axes pictrue
-imageData2 = plt.imread(r"D:\figure_image\treasure-map.png")
+imageData2 = plt.imread(r"./treasure-map.png")
 # display an image i.e. data on a 2D raster
 plt.imshow(imageData2,alpha=1.0)
 plt.axis("off")
@@ -49,4 +49,4 @@ plt.text(688,162,diagramContent,
 plt.text(663,62,"Potential Treasure",fontsize=20,color="k",weight="bold",rotation=-5)
 
 # save a SVG file
-fig.savefig(r"D:\figure_image\figure_image.svg")
+fig.savefig(r"./figure_image.svg")

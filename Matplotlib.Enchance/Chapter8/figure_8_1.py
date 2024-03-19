@@ -15,7 +15,7 @@ plt.subplots_adjust(left=0.35)
 axesbgcolor = "cornflowerblue"
 
 # a set of radionbuttons about amplitude
-ax1 = plt.axes([0.1,0.7,0.15,0.15],axisbg=axesbgcolor)
+ax1 = plt.axes([0.1,0.7,0.15,0.15],facecolor=axesbgcolor)
 radio1 = RadioButtons(ax1,("1.5 A","1.0 A","0.8 A"))
 
 def amplitudefunc(label):
@@ -27,7 +27,7 @@ def amplitudefunc(label):
 radio1.on_clicked(amplitudefunc)
 
 # a set of radiobuttons about color
-ax2 = plt.axes([0.1,0.4,0.15,0.15],axisbg=axesbgcolor)
+ax2 = plt.axes([0.1,0.4,0.15,0.15],facecolor=axesbgcolor)
 radio2 = RadioButtons(ax2,("red","green","orange"))
 
 def colorfunc(label):
@@ -37,7 +37,7 @@ def colorfunc(label):
 radio2.on_clicked(colorfunc)
 
 # a set of radionbuttons about linestyle
-ax3 = plt.axes([0.1,0.1,0.15,0.15],axisbg=axesbgcolor)
+ax3 = plt.axes([0.1,0.1,0.15,0.15],facecolor=axesbgcolor)
 radio3 = RadioButtons(ax3,("-","--","-.",":"))
 
 def linestylefunc(label):
