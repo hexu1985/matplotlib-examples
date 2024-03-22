@@ -4,7 +4,8 @@ import numpy as np
 from mpl_toolkits.mplot3d import Axes3D
 
 fig = plt.figure()
-ax = fig.gca(projection="3d")
+#ax = fig.gca(projection="3d")
+ax = fig.add_axes(Axes3D(fig))
 
 xs = np.random.rand(50)*10
 ys = np.random.rand(50)*10+20
