@@ -3,7 +3,7 @@ import numpy as np
 
 from matplotlib.backends.backend_pdf import PdfPages
 
-with PdfPages("D://PdfPages.pdf") as pdf:
+with PdfPages("./PdfPages.pdf") as pdf:
 
     # page one
     plt.figure(figsize=(4,4))

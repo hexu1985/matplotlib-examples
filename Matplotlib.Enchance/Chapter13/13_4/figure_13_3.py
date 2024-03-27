@@ -7,14 +7,14 @@ from os import mkdir
 from os.path import basename,dirname,getsize,isdir,join
 from sys import argv
 
+if len(argv) != 3:
+    print("On command line, information is not full.")
+    raise SystemExit
+
 script,indir,outdir = argv
 
 sizeList = []
 nameList = []
-
-if len(argv) != 3:
-    print("On command line, information is not full.")
-    raise SystemExit
 
 if not isdir(indir):
     print("Input directory %r is not found." % indir)
